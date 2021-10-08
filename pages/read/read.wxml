@@ -1,0 +1,44 @@
+<!--pages/read/read.wxml-->
+<view>
+  <swiper indicator-dots indicator-color="pink" indicator-active-color="white" autoplay interval="5000" circular
+    class="swiper">
+    <swiper-item>
+      <image class="banner" mode="widthFix" src="/images/maomao.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner" mode="widthFix" src="/images/fengjing.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner" mode="widthFix" src="/images/maomao2.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner" mode="widthFix" src="/images/nike.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner" mode="widthFix" src="/images/tianhe.jpg"></image>
+    </swiper-item>
+    <!-- <swiper-item>
+      <image class="banner" mode="widthFix" src="/images/xuesheng.png"></image>
+    </swiper-item>  -->
+    <!-- <swiper-item>
+      <image class="banner" mode="widthFix" src="/images/yangyang.jpg"></image>
+    </swiper-item> -->
+  </swiper>
+</view>
+<block wx:key="id" wx:for="{{listData}}">
+  <view data-property="1" data-read-id="{{item.id}}" class="list-container" bindtap="toDetail">
+    <view class="list-authAndDate">
+      <image class="list-user-avatar" catchtap="toBigImage" src="{{item.avatar.url}}"></image>
+      <text class="list-date">{{item.date}}</text>
+    </view>
+    <text class="list-title">{{item.title}}</text>
+    <image class="list-pic" mode="widthFix" src="{{item.pic}}"></image>
+    <text class="list-desc">{{item.desc}}</text>
+    <view class="list-like-container">
+      <l-icon catch:tap="onclickStar" class="list-star-icon" name="favor" size="28" color="#666"></l-icon>
+      <text class="list-star-count">{{item.likeData.starCount}}</text>
+      <l-icon class="list-star-icon" name="eye" size="32" color="#666"></l-icon>
+      <text class="list-watch-count">{{item.likeData.watchCount}}</text>
+    </view>
+  </view>
+</block>

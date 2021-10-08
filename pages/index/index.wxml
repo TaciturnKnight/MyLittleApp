@@ -1,0 +1,8 @@
+<!--pages/index.wxml-->
+<view class="image-view">
+  <lin-avatar placement="bottom" class="avatar" open-data="{{['userAvatarUrl','userNickName']}}" size="200">
+  </lin-avatar>
+  <view bindtap="onstart" class="button-view">
+    <text class="button-text">Start</text>
+  </view>
+</view>

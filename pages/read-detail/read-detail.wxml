@@ -1,0 +1,26 @@
+<!--pages/read-detail/read-detail.wxml-->
+<view class="top-container">
+  <view class="head-container">
+    <image class="head-image" mode="widthFix" src="{{readBean.pic}}"></image>
+    <image src="{{isPlayingMusic?'/images/icon/music-stop.png':'/images/icon/music-start.png'}}" mode="widthFix"
+      class="music-play" catchtap="clickPlayMusic">
+    </image>
+  </view>
+  <view class="auther-container">
+    <image class="avatar" src="{{readBean.avatar.url}}"></image>
+    <text class="auth-text">{{readBean.author.name}}</text>
+    <text class="auth-text">发表于</text>
+    <text class="auth-text">{{readBean.date}}</text>
+  </view>
+  <text class="title">{{readBean.title}}</text>
+  <view class="button-container">
+    <view class="button-flex">
+      <image class="share-button" src="/images/icon/share.png" catchtap="onClickShare"></image>
+      <image class="collect-button" src="{{collected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}"
+        catchtap="onClickCollect">
+      </image>
+    </view>
+    <view class="button-line"></view>
+  </view>
+  <text class="desc">{{readBean.desc}}</text>
+</view>

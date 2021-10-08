@@ -1,0 +1,73 @@
+/* pages/read/read.wxss */
+.banner {
+  width: 100%;
+  vertical-align: bottom;
+}
+.swiper {
+  width: 100%;
+  height: 500rpx;
+  border-bottom: solid 2rpx #ededed;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  background-color: white;
+  border-bottom: solid 10rpx #ededed;
+  padding-bottom: 12rpx;
+}
+
+.list-authAndDate {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10rpx 0 20rpx 12rpx;
+}
+
+.list-user-avatar {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.list-date {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+}
+
+.list-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  color: #333;
+}
+
+.list-pic {
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+
+.list-desc {
+  color: #666;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  letter-spacing: 2rpx;
+  margin: 0 20rpx 20rpx 20rpx;
+}
+.list-like-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list-star-icon,
+.list-watch-icon {
+  margin-left: 20rpx;
+}
+
+.list-star-count,
+.list-watch-count {
+  font-size: 24rpx;
+  margin-left: 18rpx;
+  margin-right: 40rpx;
+}

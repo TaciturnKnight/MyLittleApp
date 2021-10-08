@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/read/read",
+    "pages/read-detail/read-detail",
+    "pages/movie/movie"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#963232",
+    "navigationBarTitleText": "demo",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "lin-avatar": "/miniprogram_npm/lin-ui/avatar/index",
+    "lin-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index"
+  },
+  "requiredBackgroundModes": ["audio", "location"],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/read/read",
+      "text": "阅读",
+      "iconPath": "/images/tab/post.png",
+      "selectedIconPath": "/images/tab/post@highlight.png"
+    }, {
+      "pagePath": "pages/movie/movie",
+      "text": "电影",
+      "iconPath": "/images/tab/movie.png",
+      "selectedIconPath": "/images/tab/movie@highlight.png"
+    }]
+  }
+}

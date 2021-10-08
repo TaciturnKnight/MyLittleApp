@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "调试阅读",
+          "pathName": "pages/read/read",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/read-detail/read-detail",
+          "pathName": "pages/read-detail/read-detail",
+          "query": "readId=1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
