@@ -64,10 +64,7 @@ Page({
 
   },
   onstart: function (event) {
-    // wx.navigateTo({
-    //   url: '../read/read',
-    // })
-    wx.redirectTo({
+    wx.switchTab({
       url: '../read/read',
     })
   }
