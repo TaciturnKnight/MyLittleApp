@@ -1,0 +1,9 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="bottom-tab">
+  <view class="tab-container" wx:for="{{tabDatas}}" catchtap="changeTab" data-position="{{index}}" wx:key="index">
+    <i-icon class="tab-image" type="{{selectIndex===index?item.selectIcon:item.icon}}" size="20"
+      color="{{selectIndex==index?selectColor:unselectColor}}">
+    </i-icon>
+    <text class="tab-text" style="color:{{selectIndex==index?selectColor:unselectColor}};">{{item.text}}</text>
+  </view>
+</view>
