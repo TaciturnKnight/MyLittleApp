@@ -1,4 +1,3 @@
-// pages/index.js
 Page({
 
   /**
@@ -26,17 +25,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // wx.cloud.callFunction({
-    //   name: 'addUser',
-    //   complete: res => {
-    //     console.log(res.result)
-    //   }
-    // })
     wx.cloud.callFunction({
-      name: 'getFeelings',
-      complete: res => {
-        console.log(res.result)
-      }
+      name: 'getFeelings'
+    }).then(res => {
+      console.log(res.result)
     })
   },
 
@@ -76,7 +68,7 @@ Page({
   },
   onstart: function (event) {
     wx.switchTab({
-      url: '../read/read',
+      url: '/pages/feelings/feelings',
     })
   }
 })

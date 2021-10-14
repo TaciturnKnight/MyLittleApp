@@ -13,15 +13,9 @@
     "miniprogram": {
       "list": [
         {
-          "name": "调试阅读",
-          "pathName": "pages/read/read",
+          "name": "pages/feelings/feelings",
+          "pathName": "pages/feelings/feelings",
           "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/read-detail/read-detail",
-          "pathName": "pages/read-detail/read-detail",
-          "query": "readId=1",
           "scene": null
         }
       ]

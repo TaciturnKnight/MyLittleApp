@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/read/read",
-    "pages/read-detail/read-detail",
-    "pages/movie/movie"
+    "pages/videos/videos",
+    "pages/main/main",
+    "pages/feelings/feelings"
   ],
   "window": {
     "navigationBarBackgroundColor": "#963232",
@@ -16,20 +16,20 @@
   "usingComponents": {
     "lin-avatar": "/miniprogram_npm/lin-ui/avatar/index",
     "lin-button": "/miniprogram_npm/lin-ui/button/index",
-    "l-icon": "/miniprogram_npm/lin-ui/icon/index"
+    "i-icon":"/miniprogram_npm/dist/icon/index"
   },
-  "requiredBackgroundModes": ["audio", "location"],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
   "tabBar": {
+    "custom": true,
     "list": [{
-      "pagePath": "pages/read/read",
-      "text": "阅读",
-      "iconPath": "/images/tab/post.png",
-      "selectedIconPath": "/images/tab/post@highlight.png"
+      "pagePath": "pages/feelings/feelings",
+      "text": "心情"
     }, {
-      "pagePath": "pages/movie/movie",
-      "text": "电影",
-      "iconPath": "/images/tab/movie.png",
-      "selectedIconPath": "/images/tab/movie@highlight.png"
+      "pagePath": "pages/videos/videos",
+      "text": "视频"
     }]
   }
 }

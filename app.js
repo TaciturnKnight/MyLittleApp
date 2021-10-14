@@ -10,15 +10,6 @@ App({
       env: 'tntest-8g4nxwtj18f11f51',
       traceUser: true
     })
-    wx.cloud.callFunction({
-      name: 'addFeeling',
-      data: {
-        type:1,
-        content:'111'
-      }
-    }).then((res) => {
-
-    })
   },
 
   /**
